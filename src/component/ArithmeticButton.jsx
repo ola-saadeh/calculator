@@ -1,9 +1,10 @@
 import React from "react";
 
-const ArithmeticButton = ({ operation, onClick, css }) => {
+const ArithmeticButton = ({ id, opperation, css, functionlity}) => {
+  
   return (
-    <button className={css} onClick={() => onClick(operation)}>
-      {operation}
+    <button className={css} onClick={functionlity}>
+      {opperation}
     </button>
   );
 };
